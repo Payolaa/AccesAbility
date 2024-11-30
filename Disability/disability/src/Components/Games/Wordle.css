@@ -1,0 +1,31 @@
+.row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+  }
+  
+  .cell {
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .cell.correct {
+    background-color: green;
+  }
+  
+  .cell.present {
+    background-color: yellow;
+  }
+  
+  .cell.absent {
+    background-color: gray;
+  }
+  

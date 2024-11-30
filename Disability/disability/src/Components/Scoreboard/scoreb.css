@@ -1,0 +1,43 @@
+.scoreboard {
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  
+  .scoreboard h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .trophy-icon {
+    color: gold;
+    margin-right: 10px;
+    font-size: 24px;
+  }
+  
+  .user-score {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .username {
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .score {
+    font-size: 1.2em;
+    color: #007bff;
+    font-weight: bold;
+  }

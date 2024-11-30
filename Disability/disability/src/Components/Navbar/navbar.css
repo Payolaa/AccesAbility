@@ -1,0 +1,136 @@
+/* Navbar Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.sitename {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.navmenu {
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navmenu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navmenu ul li {
+  margin: 0 15px;
+  position: relative;
+}
+
+.navmenu ul li a {
+  color: #2c3e50;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  padding: 10px 15px;
+}
+
+.navmenu ul li a:hover {
+  color: #3498db;
+}
+
+/* Dropdown Specific Styling */
+.dropdown {
+  position: relative;
+}
+
+.dropdown .dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 200px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  border-radius: 4px;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  padding: 10px 0;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu .dropdown-item {
+  color: #2c3e50;
+  padding: 8px 20px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #f1f3f5;
+}
+
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
+}
+
+.toggle-dropdown {
+  margin-left: 5px;
+  transition: transform 0.3s ease;
+}
+
+.dropdown:hover .toggle-dropdown {
+  transform: rotate(180deg);
+}
+
+/* Mobile Navigation Toggle */
+.mobile-nav-toggle {
+  display: none;
+  font-size: 24px;
+  color: #2c3e50;
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .navmenu ul {
+    flex-direction: column;
+    display: none;
+  }
+
+  .mobile-nav-toggle {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+  }
+
+  .navmenu ul li {
+    margin: 10px 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .dropdown .dropdown-menu {
+    position: static;
+    display: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+}
